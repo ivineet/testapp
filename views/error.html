@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type = "text/css">
+		#error { color : red; }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body bgcolor="#f5666f">
+
+
+<div class="container col-xs-8" id="box1">
+  <table class="table table-bordered" style="width:90%">
+    <tr>
+      <th bgcolor="#fcfcfc">
+      <div  id="login1">
+        <table class="table table-bordered" style="width:100%">
+          <tr>
+            <th bgcolor="#ffffff"><h2 class="text-center">Login to ICM System</h2></th>
+          </tr>
+        </table>
+        <form method="post">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="login"  name="login" placeholder="Enter AD username" required autofocus>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter AD password" required>
+          </div>
+         <!-- <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+        -->
+          <button type="submit" class="btn btn-default">Login</button>
+        </form>
+        <h3>Notice</h3>
+        <h5>If Previous user didn't logout properly, It will takes few second to recover unsaved changes</h5>
+        <h3><p id="error"><%= errormsg %></p></h3>
+      </div>
+  </th>
+  </tr>
+  </table>
+</div>
+
+
+</body>
+</html>
